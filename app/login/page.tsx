@@ -18,28 +18,28 @@ const Login = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900">
-            <div className="bg-black shadow-lg rounded-lg p-8 max-w-sm w-full">
-                <h1 className="text-2xl font-bold text-center mb-6 text-gray-100">Login</h1>
+        <div className="flex items-center justify-center min-h-screen bg-gray-50">
+            <div className="bg-white shadow-xl border rounded-lg p-8 max-w-sm w-full">
+                <h1 className="text-2xl font-bold text-center mb-6 text-slate-700">Login</h1>
                  <div className="space-y-4">
                     <input 
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950 text-black">
+                    className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-200 text-black">
                     </input>
                     <input 
                     type="password"
                     placeholder="Constraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-950 text-black">
+                    className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-200 text-black">
                     </input>
 
                     <button
                         onClick={handleLogin}
-                        className="w-full bg-green-600 text-white py-2 rounded-lg font-semibold shadow-md hover:bg-green-700 transition duration-300">
+                        className="w-full bg-green-500 hover:bg-green-700 transition duration-300 text-white py-2 rounded-lg font-semibold shadow-md">
                             Iniciar Sesion
                         </button>
                  </div>
